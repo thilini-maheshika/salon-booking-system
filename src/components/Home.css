@@ -1,0 +1,257 @@
+/* src/components/Home.css */
+
+.home-section{
+    width:100%;
+    height:590px;
+}
+
+.home-container {
+    padding: 2px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .home-text{
+    width: 40%;
+    text-align: left;
+    position: relative;
+  }
+  
+  .words-section {
+    flex: 1;
+    padding-right: 20px;
+    margin-top:-10%;
+  }
+  
+  .words-section h1 {
+    font-size: 3.75rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .words-section p {
+    font-size: 1.25rem;
+    color: #666;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1024px) {
+
+    .home-text {
+        width: 60%;
+    }
+
+    .words-section h1 {
+        font-size: 3.5rem;
+      }
+    
+  }
+
+  @media (max-width: 820px) {
+
+      .input-wrapper button {
+        width: 120px;
+        height: 45px;
+        border-radius: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    /* .searching-card {
+        display: none;
+    } */
+
+    .image-container img {
+        width: 350px;
+    }
+
+    .home-text {
+        width: 60%;
+    }
+
+    .words-section h1 {
+        font-size: 2.5rem;
+      }
+    
+      .searching-card {
+        max-width: 600px !important;
+      }
+
+      .search-inputs {
+        flex-direction: column;
+        align-items:center;
+      }
+
+      .input-wrapper button {
+        width: 200px;
+        border-radius: 988px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .image-container img {
+        display:none;
+      }
+
+    .home-container {
+        padding: 2px 10px;
+    }
+
+    .home-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .words-section h1 {
+        font-size: 2.25rem;
+      }
+      
+  }
+
+  @media (max-width: 540px) {
+
+    .searching-card {
+      padding:20px;
+      top:auto !important;
+      left:auto !important;
+      transform:none !important;
+      max-width: 350px !important;
+    }
+
+    .searching-card h3 {
+      font-size: 1.25rem;
+    }
+
+    .search-inputs {
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+    }
+
+      .input-wrapper {
+          flex-direction: column;
+          align-items: center !important;
+      }
+    
+      .input-wrapper button {
+        width: 150px;
+        border-radius: 988px;
+        margin-top: 20px;
+    }
+}
+
+  @media (max-width: 420px) {
+
+      .searching-card {
+        padding:20px;
+        top:auto !important;
+        left:auto !important;
+        transform:none !important;
+        max-width: 300px !important;
+      }
+
+      .searching-card h3 {
+        font-size: 1.25rem;
+      }
+
+      .search-inputs {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
+        .input-wrapper {
+            flex-direction: column;
+            align-items: center !important;
+        }
+    
+        .input-wrapper button {
+            width: 150px;
+            border-radius: 988px;
+            margin-top: 20px;
+        }
+  }
+  
+  .searching-card {
+    position: absolute;
+    background: linear-gradient(to right, #E195B3, #AA95EB);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    z-index: 1;
+  }
+  
+  .searching-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+  }
+  
+  .search-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .search-inputs input {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+    font-size:  1rem;
+  }
+  
+  .search-inputs button {
+    padding: 10px 40px;
+    background-color: white;
+    color: #666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:  1rem;
+  }
+  
+  .search-inputs button:hover {
+    background-color: #ddd;
+  }
+
+  .input-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  
